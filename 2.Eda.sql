@@ -1,3 +1,41 @@
-SELECT "Order ID", "Purchase Date", "Ship Date", "Returned", "Return Date", "Continent", "Country", "City", "Store ID", "Store Name", "Store Type", "Channel", "Priority", "Payment Method", "Promotion ID", "Promotion Name", "Customer ID", "Customer Segment", "Loyalty Tier", "Salesperson ID", "Salesperson Department", "Product ID", "SKU", "Product Name", "Category", "Subcategory", "Brand", "Quantity", "Unit Cost", "Unit Price", "Discount Amount", "Tax Amount", "Shipping Cost", "Gross Sales", "Net Sales", "COGS", "Gross Profit"
-FROM  public."1778602684784_retail_sales"
-WHERE "Order ID" IS not NULL; 
+-- Exploratory data analysis query for the raw retail sales source table
+SELECT
+    "Order ID",
+    "Purchase Date",
+    "Ship Date",
+    "Returned",
+    "Return Date",
+    "Continent",
+    "Country",
+    "City",
+    "Store ID",
+    "Store Name",
+    "Store Type",
+    "Channel",
+    "Priority",
+    "Payment Method",
+    "Promotion ID",
+    "Promotion Name",
+    "Customer ID",
+    "Customer Segment",
+    "Loyalty Tier",
+    "Salesperson ID",
+    "Salesperson Department",
+    "Product ID",
+    "SKU",
+    "Product Name",
+    "Category",
+    "Subcategory",
+    "Brand",
+    "Quantity",
+    "Unit Cost",
+    "Unit Price",
+    "Discount Amount",
+    "Tax Amount",
+    "Shipping Cost",
+    "Gross Sales",
+    "Net Sales",
+    "COGS",
+    "Gross Profit"
+FROM public."1778602684784_retail_sales"
+WHERE "Order ID" IS NOT NULL; 
