@@ -6,19 +6,19 @@ This project builds a staging layer for a retail sales dataset stored in Postgre
 ## Files and Purpose
 - `1.CreateDB.sql` - Creates the staging and data warehouse databases.
 - `2.Eda.sql` - Exploratory query to inspect raw source data.
-- `3.0.stg_Dim.sql` - Full raw source query for reference and staging record review.
-- `3.1.stg_Dim _customer.sql` - Staging customer dimension.
-- `3.2.stg_Dim _location.sql` - Staging location dimension.
-- `3.3.stg_Dim_store.sql` - Staging store dimension.
-- `3.4.stg_Dim _promotion.sql` - Staging promotion dimension.
-- `3.5.stg_Dim_date.sql` - Staging date dimension.
-- `3.6.stg_Dim_salesperson.sql` - Staging salesperson dimension.
-- `3.7.stg_Dim_product.sql` - Staging product dimension.
-- `3.8.stg_Dim_category.sql` - Staging category dimension.
-- `3.9.stg_Dim_channel.sql` - Staging channel dimension.
-- `3.10.stg_Dim_priority.sql` - Staging priority dimension.
-- `3.11.stg_Dim_returned.sql` - Staging returned status dimension.
-- `3.12.stg_Dim_payment_method.sql` - Staging payment method dimension.
+- `3.0.stg_dim.sql` - Full raw source query for reference and staging record review.
+- `3.1.stg_dim_customer.sql` - Staging customer dimension.
+- `3.2.stg_dim_location.sql` - Staging location dimension.
+- `3.3.stg_dim_store.sql` - Staging store dimension.
+- `3.4.stg_dim_promotion.sql` - Staging promotion dimension.
+- `3.5.stg_dim_date.sql` - Staging date dimension.
+- `3.6.stg_dim_salesperson.sql` - Staging salesperson dimension.
+- `3.7.stg_dim_product.sql` - Staging product dimension.
+- `3.8.stg_dim_category.sql` - Staging category dimension.
+- `3.9.stg_dim_channel.sql` - Staging channel dimension.
+- `3.10.stg_dim_priority.sql` - Staging priority dimension.
+- `3.11.stg_dim_returned.sql` - Staging returned status dimension.
+- `3.12.stg_dim_payment_method.sql` - Staging payment method dimension.
 
 ## Data Flow
 The project follows a simple extract-load pattern:
@@ -132,5 +132,3 @@ The Mermaid diagram above shows the current staging architecture and potential f
 - `dim_store`
 - `dim_product`
 - `fact_sales`
-
-git status
